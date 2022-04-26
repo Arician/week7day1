@@ -1,16 +1,18 @@
-const movieArray=[];
+const animeArray=[];
 
-class Movie{
-    constructor(title, actor='Not specified'){
+class Anime{
+    constructor(title, protag='Not Specified', protagVA='Not specified', genre='Not specified'){
         this.title=title;
-        this.actor=actor;
+        this.protag=protag;
+        this.protagVA=protagVA;
+        this.genre=genre;
     }
     add(){
-        movieArray.push(this)
+        animeArray.push(this)
     }
 };
 
 module.exports={
-    Movie,
-    movieArray
+    Anime,
+    animeArray
 }
